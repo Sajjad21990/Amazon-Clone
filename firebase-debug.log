@@ -1,0 +1,57 @@
+[debug] [2020-10-22T08:44:16.197Z] ----------------------------------------------------------------------
+[debug] [2020-10-22T08:44:16.199Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\welcome\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2020-10-22T08:44:16.199Z] CLI Version:   8.4.3
+[debug] [2020-10-22T08:44:16.199Z] Platform:      win32
+[debug] [2020-10-22T08:44:16.199Z] Node Version:  v12.16.1
+[debug] [2020-10-22T08:44:16.201Z] Time:          Thu Oct 22 2020 14:14:16 GMT+0530 (India Standard Time)
+[debug] [2020-10-22T08:44:16.201Z] ----------------------------------------------------------------------
+[debug] [2020-10-22T08:44:16.201Z] 
+[debug] [2020-10-22T08:44:16.210Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2020-10-22T08:44:16.210Z] > authorizing via signed-in user
+[debug] [2020-10-22T08:44:16.211Z] [iam] checking project amzn-clone-2199 for permissions ["cloudfunctions.functions.create","cloudfunctions.functions.delete","cloudfunctions.functions.get","cloudfunctions.functions.list","cloudfunctions.functions.update","cloudfunctions.operations.get","firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2020-10-22T08:44:16.214Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/amzn-clone-2199:testIamPermissions  
+ {"permissions":["cloudfunctions.functions.create","cloudfunctions.functions.delete","cloudfunctions.functions.get","cloudfunctions.functions.list","cloudfunctions.functions.update","cloudfunctions.operations.get","firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2020-10-22T08:44:17.611Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Thu, 22 Oct 2020 08:44:15 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","server-timing":"gfet4t7; dur=1296","alt-svc":"h3-Q050=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-27=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-T050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2020-10-22T08:44:17.613Z] >>> HTTP REQUEST POST https://iam.googleapis.com/v1/projects/amzn-clone-2199/serviceAccounts/amzn-clone-2199@appspot.gserviceaccount.com:testIamPermissions  
+ {"permissions":["iam.serviceAccounts.actAs"]}
+[debug] [2020-10-22T08:44:19.266Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Thu, 22 Oct 2020 08:44:17 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-Q050=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-27=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-T050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2020-10-22T08:44:19.267Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/amzn-clone-2199  
+ 
+[debug] [2020-10-22T08:44:19.656Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Thu, 22 Oct 2020 08:44:18 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-Q050=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-T050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2020-10-22T08:44:19.804Z] TypeError [ERR_INVALID_ARG_TYPE]: The "path" argument must be of type string. Received undefined
+    at validateString (internal/validators.js:117:11)
+    at Object.join (path.js:375:7)
+    at Object.checkFunctionsSDKVersion [as fn] (C:\Users\welcome\AppData\Roaming\npm\node_modules\firebase-tools\lib\checkFirebaseSDKVersion.js:33:28)
+    at Command.<anonymous> (C:\Users\welcome\AppData\Roaming\npm\node_modules\firebase-tools\lib\command.js:159:30)
+    at Generator.next (<anonymous>)
+    at fulfilled (C:\Users\welcome\AppData\Roaming\npm\node_modules\firebase-tools\lib\command.js:5:58)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2020-10-22T08:44:30.479Z] ----------------------------------------------------------------------
+[debug] [2020-10-22T08:44:30.481Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\welcome\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy --except functions
+[debug] [2020-10-22T08:44:30.482Z] CLI Version:   8.4.3
+[debug] [2020-10-22T08:44:30.482Z] Platform:      win32
+[debug] [2020-10-22T08:44:30.482Z] Node Version:  v12.16.1
+[debug] [2020-10-22T08:44:30.483Z] Time:          Thu Oct 22 2020 14:14:30 GMT+0530 (India Standard Time)
+[debug] [2020-10-22T08:44:30.483Z] ----------------------------------------------------------------------
+[debug] [2020-10-22T08:44:30.483Z] 
+[debug] [2020-10-22T08:44:30.492Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2020-10-22T08:44:30.493Z] > authorizing via signed-in user
+[debug] [2020-10-22T08:44:30.493Z] [iam] checking project amzn-clone-2199 for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2020-10-22T08:44:30.496Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/amzn-clone-2199:testIamPermissions  
+ {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2020-10-22T08:44:32.132Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Thu, 22 Oct 2020 08:44:30 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","server-timing":"gfet4t7; dur=1279","alt-svc":"h3-Q050=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-T050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2020-10-22T08:44:32.134Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/amzn-clone-2199  
+ 
+[debug] [2020-10-22T08:44:32.511Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Thu, 22 Oct 2020 08:44:30 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-Q050=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-T050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2020-10-22T08:44:32.652Z] TypeError [ERR_INVALID_ARG_TYPE]: The "path" argument must be of type string. Received undefined
+    at validateString (internal/validators.js:117:11)
+    at Object.join (path.js:375:7)
+    at Object.checkFunctionsSDKVersion [as fn] (C:\Users\welcome\AppData\Roaming\npm\node_modules\firebase-tools\lib\checkFirebaseSDKVersion.js:33:28)
+    at Command.<anonymous> (C:\Users\welcome\AppData\Roaming\npm\node_modules\firebase-tools\lib\command.js:159:30)
+    at Generator.next (<anonymous>)
+    at fulfilled (C:\Users\welcome\AppData\Roaming\npm\node_modules\firebase-tools\lib\command.js:5:58)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+[error] 
+[error] Error: An unexpected error has occurred.

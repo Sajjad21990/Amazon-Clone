@@ -1,0 +1,41 @@
+.steps-content {
+  margin-top: 16px;
+  border-radius: 2px;
+  min-height: 200px;
+  text-align: center;
+  padding-top: 40px;
+}
+
+.steps-action {
+  margin-top: 24px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.payment-section {
+  padding: 30px;
+  margin: 10px;
+}
+.payment-section > form {
+  border: 2px solid #dddddd;
+  padding: 15px;
+  border-radius: 5px;
+}
+.payment-section > h2 {
+  margin-top: 3vh;
+}
+.payment-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.payment-container > form {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+}
